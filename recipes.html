@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezepte - Kroeppi's Rezeptdatenbank</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🍳 Kroeppi's Rezepte</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html" class="active">Rezepte</a></li>
+                <li><a href="recipes.html?tab=search-name">Nach Namen suchen</a></li>
+                <li><a href="recipes.html?tab=search-ingredients">Nach Zutaten suchen</a></li>
+                <li><button class="theme-toggle" id="themeToggle" aria-label="Dark Mode umschalten">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="list">📋 Rezeptliste</button>
+            <button class="tab-btn" data-tab="search-name">🔍 Nach Namen</button>
+            <button class="tab-btn" data-tab="search-ingredients">🥘 Nach Zutaten</button>
+        </div>
+
+        <div class="tab-content">
+            <div id="list" class="tab active">
+                <h2>Alle Rezepte (alphabetisch sortiert)</h2>
+                <div id="recipeList" class="recipe-grid"></div>
+            </div>
+
+            <div id="search-name" class="tab">
+                <h2>Rezepte nach Namen suchen</h2>
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="searchNameInput"
+                        placeholder="Rezeptname eingeben..."
+                        class="search-input"
+                    >
+                </div>
+                <div id="searchNameResults" class="recipe-grid"></div>
+                <div id="noResultsName" class="no-results" style="display: none;">
+                    Keine Rezepte gefunden. Versuche einen anderen Namen!
+                </div>
+            </div>
+
+            <div id="search-ingredients" class="tab">
+                <h2>Rezepte nach Zutaten suchen</h2>
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="searchIngredientsInput"
+                        placeholder="Zutat eingeben (z.B. Tomate, Käse)..."
+                        class="search-input"
+                    >
+                </div>
+                <div id="searchIngredientsResults" class="recipe-grid"></div>
+                <div id="noResultsIngredients" class="no-results" style="display: none;">
+                    Keine Rezepte mit dieser Zutat gefunden. Versuche eine andere!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="recipeModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" type="button" aria-label="Modal schließen">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Kroeppi's Rezeptdatenbank. Genießen Sie das Kochen!</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

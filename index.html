@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kroeppi's Rezepte - Rezeptdatenbank</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🍳 Kroeppi's Rezepte</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="recipes.html">Rezepte</a></li>
+                <li><a href="recipes.html?tab=search-name">Nach Namen suchen</a></li>
+                <li><a href="recipes.html?tab=search-ingredients">Nach Zutaten suchen</a></li>
+                <li><button class="theme-toggle" id="themeToggle" aria-label="Dark Mode umschalten">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Willkommen zu Kroeppi's Rezeptdatenbank</h2>
+            <p>Entdecke leckere Rezepte und finde schnell die perfekte Inspiration zum Kochen!</p>
+            <div class="hero-buttons">
+                <a href="recipes.html" class="btn btn-primary">Alle Rezepte anschauen</a>
+                <a href="recipes.html?tab=search-ingredients" class="btn btn-secondary">Nach Zutaten suchen</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Funktionen</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Rezeptliste</h3>
+                <p>Durchsuche alle Rezepte alphabetisch sortiert und finde neue Inspirationen</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Nach Namen suchen</h3>
+                <p>Suche schnell nach deinem Lieblingsgericht nach Name</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🥘</div>
+                <h3>Nach Zutaten suchen</h3>
+                <p>Finde Rezepte basierend auf den Zutaten die du hast</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>Zubereitungszeit</h3>
+                <p>Sehe auf einen Blick wie lange die Zubereitung dauert</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-item">
+            <h3 id="recipeCount">0</h3>
+            <p>Rezepte in der Datenbank</p>
+        </div>
+        <div class="stat-item">
+            <h3>100%</h3>
+            <p>Offline verfügbar</p>
+        </div>
+        <div class="stat-item">
+            <h3>📱</h3>
+            <p>Mobile-freundlich</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Kroeppi's Rezeptdatenbank. Genießen Sie das Kochen!</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

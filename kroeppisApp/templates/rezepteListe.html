@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>
+            Rezepte von A-Z
+        </h1>
+
+        <ul>
+            {% for Rezepte in rezepte_liste %}
+                <li>
+                    <a href="{% url 'rezepte-einzeln' Rezepte.id %}"> {{ Rezepte }} </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+{% endblock %}

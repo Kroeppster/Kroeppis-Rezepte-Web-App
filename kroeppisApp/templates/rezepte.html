@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+    <div class="container">
+        <h1>
+            {{ Rezept }}
+        </h1>
+        <br><br>
+        Zutaten: {{ Rezept.zutaten }} <br>
+        Zubereitungsdauer: {{ Rezept.dauer }} <br>
+        Zubereitung: {{ Rezept.zubereitung }} <br>
+    </div>
+</center>
+{% endblock %}

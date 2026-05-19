@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <center>
+        <h1>
+            Willkommen auf Kröppis Rezepte App
+        </h1>
+        <div class="position-absolute top-50 start-50 translate-middle"> <!-- setzt das feld automatisch in die Mitte des Bildschirms, unabhängig von grösse -->
+            <div class="container">
+                <div class="row align middle">
+                    <div class="col">
+                        <form class="d-flex" method=POST  action="{% url 'rezeptsuche' %}">
+                            {% csrf_token %}
+                            <input class="form-control me-2" type="nach Zutaten suchen" placeholder="nach Zutaten suchen" aria-label="nach Zutaten suchen" name="searched">
+                            <button class="btn btn-outline-light" type="submit">
+                                Suchen
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        Hier können Sie nach Rezepten der Albanischen Küche suchen, bitte beachten Sie dabei: <br>
+                            1. Suchen Sie nur nach einer Zutat. <br>
+                            2. Geben Sie keine Mengenangaben ein. <br>
+                            3. Schreiben Sie die Zutaten im Singular. <br>
+                        Eine detaillierte Beschreibung finden Sie unter <a href="{% url 'anleitung' %}"> Anleitung </a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+{% endblock %}

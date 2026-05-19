@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+    {% if searched %}
+        <h1> Ergebnisse für "{{searched}}" </h1>
+
+        <br/>
+
+        {% for rezepte in rezepte %}
+
+             <a href="{% url 'rezepte-einzeln' rezepte.id %}">
+                {{rezepte}}<br>
+            </a>
+
+        {% endfor %}
+
+    {% else %}
+
+        <h1> Sie haben leider nichts eingetippt. Versuchen Sie es bitte nochmal.</h1>
+
+    {% endif %}
+
+</center>
+
+{% endblock %}

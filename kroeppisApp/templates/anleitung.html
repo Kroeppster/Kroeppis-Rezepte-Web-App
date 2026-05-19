@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1>
+        Anleitung
+    </h1>
+    Auf dieser Web-App haben Sie drei Möglichkeiten ein Rezept zu finden. Zuerst müssen Sie sich entscheiden, welche Methode Sie nutzen wollen. Zur Auswahl steht Ihnen: eine Liste aller Rezepte von A-Z, die Suche nach dem Namen von Gerichten oder die Suche nach Rezepten.
+    <br>
+    <br>
+    <ul>
+        <li>
+            Für die Liste aller Rezepte klicken Sie auf die <a href="{% url 'rezeptliste' %}">Rezepte von A-Z</a>.
+        </li>
+        <li>
+            Die Suche mit dem Namen der Gerichte können Sie mithilfe des Suchfeldes im oberen, rechten Rand bedienen.
+        </li>
+        <li>
+            Für die Suche nach den Zutaten müssen Sie zurück zur <a href="{% url 'homepage' %}">Startseite</a> gehen. Das Suchfeld in der Mitte des Bildschirms dient der Suche mit Zutaten. Beachten Sie bitte dabei: Sie dürfen nur eine Zutat pro Suche eingeben. Diese Zutat sollte im Singular geschrieben sein. Leider dürfen Sie auch keine Mengenangaben verwenden, da Sie sonst keine Resultate erhalten. Ich bitte Sie hierfür um Verständnis.
+        </li>
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Caesar Salad",
+        "dauer": "20 Minuten",
+        "zutaten": "1 Romana Salat\n50 g Parmesan\n100 g Croutons\n2 EL Olivenöl\nCaesar Dressing",
+        "zubereitung": "Salat waschen und trocken schleudern.\nMit Dressing mischen.\nCroutons und Parmesan darüber geben."
+    },
+    {
+        "id": 2,
+        "name": "Hähnchen Teriyaki",
+        "dauer": "35 Minuten",
+        "zutaten": "400 g Hähnchenbrust\n4 EL Teriyaki Sauce\n1 Paprika\n1 Zwiebel\n200 g Reis",
+        "zubereitung": "Reis kochen.\nHähnchen und Gemüse anbraten.\nMit Teriyaki Sauce ablöschen und kurz einkochen lassen."
+    },
+    {
+        "id": 3,
+        "name": "Schnitzel mit Kartoffelsalat",
+        "dauer": "50 Minuten",
+        "zutaten": "2 Schweineschnitzel\n2 Eier\nPaniermehl\n500 g Kartoffeln\n1 Zwiebel\nEssig und Öl",
+        "zubereitung": "Kartoffeln kochen und in Scheiben schneiden.\nSalat mit Essig, Öl und Zwiebel marinieren.\nSchnitzel panieren und goldbraun braten."
+    },
+    {
+        "id": 4,
+        "name": "Spaghetti Carbonara",
+        "dauer": "25 Minuten",
+        "zutaten": "400 g Spaghetti\n150 g Speck\n3 Eier\n80 g Parmesan\nPfeffer\nSalz",
+        "zubereitung": "Spaghetti al dente kochen.\nSpeck knusprig anbraten.\nEier mit Parmesan verrühren und mit Pasta sowie Speck vermengen."
+    },
+    {
+        "id": 5,
+        "name": "Tomaten-Basilikum Pasta",
+        "dauer": "30 Minuten",
+        "zutaten": "400 g Pasta\n500 g Tomaten\n2 Knoblauchzehen\n1 Bund Basilikum\n3 EL Olivenöl",
+        "zubereitung": "Pasta kochen.\nTomaten mit Knoblauch in Olivenöl anschwitzen.\nMit Basilikum und Pasta vermischen."
+    },
+    {
+        "id": 6,
+        "name": "Vegetarisches Curry",
+        "dauer": "40 Minuten",
+        "zutaten": "1 Zucchini\n1 Paprika\n1 Karotte\n400 ml Kokosmilch\n2 EL Currypaste\n200 g Reis",
+        "zubereitung": "Reis garen.\nGemüse anbraten, Currypaste einrühren und mit Kokosmilch aufgießen.\n10 Minuten köcheln lassen und mit Reis servieren."
+    }
+]
